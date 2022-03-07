@@ -1,9 +1,23 @@
+package com.google.common.html;
+
+import com.google.common.annotations.Beta;
+import com.google.common.annotations.GwtCompatible;
+import com.google.common.escape.ArrayBasedCharEscaper;
+import com.google.common.escape.ArrayBasedEscaperMap;
+import com.google.common.escape.ArrayBasedUnicodeEscaper;
+import com.google.common.escape.CharEscaper;
+import com.google.common.escape.Escapers;
+import com.google.common.escape.UnicodeEscaper;
+
+
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.io.PrintWriter;
+
+
 
 public class Vulns {
 
