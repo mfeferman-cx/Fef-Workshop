@@ -47,7 +47,6 @@ public class Vulns {
   		PrintWriter out = response.getWriter();
   		String loc = request.getParameter("location");
 		loc+=res.getString("GEO_LOC");
-  
-  		out.println("<h1> Location: " + loc + "<h1>");
+  		out.println("<h1> Location: " + HtmlEncode(loc) + "<h1>");
 	}
 }
