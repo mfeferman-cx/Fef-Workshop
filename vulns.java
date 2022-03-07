@@ -46,6 +46,7 @@ public class Vulns {
 	protected void doGet(Result res, HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     
     		response.setContentType("text/html;charset=UTF-8");
+		response.setHeader("Strict-Transport-Security", "max-age=31536000; includeSubDomains");
       
   		PrintWriter out = response.getWriter();
   		String loc = request.getParameter("location");
